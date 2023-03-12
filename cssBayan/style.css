@@ -3,6 +3,15 @@ body {
   background-color: rgb(230, 225, 218);
   color: black;
 }
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 ._container {
   max-width: 1046px;
   padding: 0px 15px;
@@ -13,4 +22,56 @@ h1 {
   font-weight: bold;
   border-bottom: 2px solid rgb(201, 197, 191);
   padding: 10px 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* 
+.item-link:hover {
+  background-color: rgb(216, 209, 199);
+} */
+.item-link {
+  display: block;
+  border-bottom: 2px solid rgb(201, 197, 191);
+  padding: 10px 0px;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  margin: 0px;
+}
+.item-icon {
+  height: 4%;
+  width: 4%;
+  opacity: 0%;
+  transition: opacity 0.3s;
+}
+ul:hover .item-icon {
+  opacity: 100%;
+}
+.image-container {
+  display: flex;
+  height: 0%;
+  width: 0%;
+  transition: all 0.5s;
+  justify-content: center;
+}
+.item-link:focus .image-container {
+  height: 100%;
+  width: 100%;
+  margin: 15px 0px;
+}
+.meme-image {
+  height: 40%;
+  width: 40%;
 }
