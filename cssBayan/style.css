@@ -59,10 +59,11 @@ ul:hover .item-icon {
 }
 .image-container {
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
   height: 0%;
   width: 0%;
   transition: all 0.5s;
-  justify-content: center;
 }
 .item-link:focus .image-container {
   height: 100%;
