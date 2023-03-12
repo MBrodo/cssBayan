@@ -68,7 +68,7 @@ ul:hover .item-icon {
 .item-link:focus .image-container {
   height: 100%;
   width: 100%;
-  margin: 15px 0px;
+  margin: 15px auto;
 }
 .item-link:focus .item-icon {
   transform: rotate(45deg);
@@ -77,7 +77,7 @@ ul:hover .item-icon {
 .item-link:hover .image-container {
   height: 100%;
   width: 100%;
-  margin: 15px 0px;
+  margin: 15px auto;
 }
 .item-link:hover .item-icon {
   transform: rotate(45deg);
