@@ -87,3 +87,51 @@ ul:hover .item-icon {
   height: 40%;
   width: 40%;
 }
+@media (max-width: 821px) {
+  h1 {
+    font-size: 220%;
+  }
+  h2 {
+    font-size: 170%;
+  }
+  .meme-image {
+    height: 50%;
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 200%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  .meme-image {
+    height: 60%;
+    width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 130%;
+  }
+  .meme-image {
+    height: 70%;
+    width: 70%;
+  }
+}
+@media (max-width: 370px) {
+  h1 {
+    font-size: 160%;
+  }
+  h2 {
+    font-size: 110%;
+  }
+  .meme-image {
+    height: 80%;
+    width: 80%;
+  }
+}
