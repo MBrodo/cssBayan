@@ -2,6 +2,7 @@ body {
   height: 100%;
   background-color: rgb(230, 225, 218);
   color: black;
+  overflow-y: scroll;
 }
 button {
   background: none;
@@ -33,14 +34,11 @@ a {
   text-decoration: none;
   color: black;
 }
-/* 
-.item-link:hover {
-  background-color: rgb(216, 209, 199);
-} */
 .item-link {
   display: block;
   border-bottom: 2px solid rgb(201, 197, 191);
   padding: 10px 0px;
+  justify-content: center;
 }
 .item-header {
   display: flex;
@@ -70,6 +68,19 @@ ul:hover .item-icon {
   height: 100%;
   width: 100%;
   margin: 15px 0px;
+}
+.item-link:focus .item-icon {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.item-link:hover .image-container {
+  height: 100%;
+  width: 100%;
+  margin: 15px 0px;
+}
+.item-link:hover .item-icon {
+  transform: rotate(45deg);
+  transition: 0.5s;
 }
 .meme-image {
   height: 40%;
