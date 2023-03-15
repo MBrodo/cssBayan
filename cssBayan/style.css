@@ -54,9 +54,6 @@ h2 {
   opacity: 0%;
   transition: opacity 0.3s;
 }
-ul:hover .item-icon {
-  opacity: 100%;
-}
 .image-container {
   display: flex;
   justify-content: center;
@@ -76,15 +73,6 @@ ul:hover .item-icon {
 }
 .item-link:focus h2 {
   color: rgb(85, 85, 158);
-}
-.item-link:hover .image-container {
-  height: 100%;
-  width: 100%;
-  margin: 15px auto;
-}
-.item-link:hover .item-icon {
-  transform: rotate(45deg);
-  transition: 0.5s;
 }
 .meme-image {
   height: 40%;
@@ -136,5 +124,19 @@ ul:hover .item-icon {
   .meme-image {
     height: 80%;
     width: 80%;
+  }
+}
+@media (min-width: 820px) {
+  ul:hover .item-icon {
+    opacity: 100%;
+  }
+  .item-link:hover .image-container {
+    height: 100%;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .item-link:hover .item-icon {
+    transform: rotate(45deg);
+    transition: 0.5s;
   }
 }
