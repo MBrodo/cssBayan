@@ -15,14 +15,14 @@ button {
 }
 ._container {
   max-width: 1046px;
-  padding: 0px 15px;
-  margin: 0px auto;
+  padding: 0 1.5em;
+  margin: 0 auto;
   box-sizing: content-box;
 }
 h1 {
   font-weight: bold;
-  border-bottom: 2px solid rgb(201, 197, 191);
-  padding: 10px 0;
+  border-bottom: 0.07em solid rgb(201, 197, 191);
+  padding: 0.3em 0;
   margin: 0;
 }
 ul {
@@ -33,12 +33,12 @@ ul {
 .item-link {
   display: block;
   width: 100%;
-  border-bottom: 2px solid rgb(201, 197, 191);
-  padding: 10px 0px;
+  border-bottom: 0.15em solid rgb(201, 197, 191);
+  padding: 0.3em 0;
   justify-content: center;
 }
 .item-last {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 .item-header {
   display: flex;
@@ -46,7 +46,7 @@ ul {
   align-items: center;
 }
 h2 {
-  margin: 0px;
+  margin: 0;
 }
 .item-icon {
   height: 4%;
@@ -65,7 +65,7 @@ h2 {
 .item-link:focus .image-container {
   height: 100%;
   width: 100%;
-  margin: 15px auto;
+  margin: 1em auto;
 }
 .item-link:focus .item-icon {
   transform: rotate(45deg);
@@ -133,7 +133,7 @@ h2 {
   .item-link:hover .image-container {
     height: 100%;
     width: 100%;
-    margin: 15px auto;
+    margin: 1em auto;
   }
   .item-link:hover .item-icon {
     transform: rotate(45deg);
