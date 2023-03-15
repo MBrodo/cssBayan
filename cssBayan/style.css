@@ -1,0 +1,142 @@
+body {
+  height: 100%;
+  background-color: rgb(230, 225, 218);
+  color: black;
+  overflow-y: scroll;
+}
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+._container {
+  max-width: 1046px;
+  padding: 0 1.5em;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+h1 {
+  font-weight: bold;
+  border-bottom: 0.07em solid rgb(201, 197, 191);
+  padding: 0.3em 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.item-link {
+  display: block;
+  width: 100%;
+  border-bottom: 0.15em solid rgb(201, 197, 191);
+  padding: 0.3em 0;
+  justify-content: center;
+}
+.item-last {
+  border-bottom: 0;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  margin: 0;
+}
+.item-icon {
+  height: 4%;
+  width: 4%;
+  opacity: 0%;
+  transition: opacity 0.3s;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 0%;
+  width: 0%;
+  transition: all 0.5s;
+}
+.item-link:focus .image-container {
+  height: 100%;
+  width: 100%;
+  margin: 1em auto;
+}
+.item-link:focus .item-icon {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.item-link:focus h2 {
+  color: rgb(85, 85, 158);
+}
+.meme-image {
+  height: 40%;
+  width: 40%;
+}
+@media (max-width: 821px) {
+  h1 {
+    font-size: 220%;
+  }
+  h2 {
+    font-size: 170%;
+  }
+  .meme-image {
+    height: 50%;
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 200%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  .meme-image {
+    height: 60%;
+    width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 130%;
+  }
+  .meme-image {
+    height: 70%;
+    width: 70%;
+  }
+}
+@media (max-width: 370px) {
+  h1 {
+    font-size: 160%;
+  }
+  h2 {
+    font-size: 110%;
+  }
+  .meme-image {
+    height: 80%;
+    width: 80%;
+  }
+}
+@media (min-width: 820px) {
+  ul:hover .item-icon {
+    opacity: 100%;
+  }
+  .item-link:hover .image-container {
+    height: 100%;
+    width: 100%;
+    margin: 1em auto;
+  }
+  .item-link:hover .item-icon {
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+}
